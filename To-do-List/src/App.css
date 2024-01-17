@@ -1,0 +1,17 @@
+.App {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #33c4ff;
+}
+
+.list {
+  display: flex;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 15px;
+  background-color: white;
+  transition: 0.2s;
+}
