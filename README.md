@@ -1,1 +1,1 @@
-# To-do-list-typescript-task
+Internship Exercise
