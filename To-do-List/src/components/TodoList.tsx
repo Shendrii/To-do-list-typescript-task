@@ -9,9 +9,14 @@ interface Props {
 
 const TodoList = ({ todos, setTodos }: Props) => {
   return (
-    <div className="container">
-      <List todos={todos} setTodos={setTodos} />
-      <div></div>
+    <div>
+      <div>
+        {todos.map((todo) => (
+          <div>
+            <List todos={todos} setTodos={setTodos} todo={todo} key={todo.id} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

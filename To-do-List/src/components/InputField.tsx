@@ -9,16 +9,21 @@ interface Props {
 const InputField = ({ todo, setTodo, handleAdd }: Props) => {
   return (
     <form className="input" onSubmit={handleAdd}>
-      <input
-        className="input-field"
-        type="input"
-        value={todo}
-        onChange={(event) => setTodo(event.target.value)}
-        placeholder="Enter Task"
-      ></input>
-      <button type="submit" className="btn btn-primary">
-        Add
-      </button>
+      <div className="input-group mb-3">
+        <input
+          id="input_field"
+          className="form-control"
+          type="input"
+          value={todo}
+          onChange={(event) => setTodo(event.target.value)}
+          placeholder="Enter Task"
+        />
+        <span className="input-group-text">
+          <button type="submit" className="btn btn-primary">
+            Add
+          </button>
+        </span>
+      </div>
     </form>
   );
 };
